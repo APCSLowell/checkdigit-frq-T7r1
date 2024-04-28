@@ -11,7 +11,7 @@ public class CheckDigit
      String tem=""+num;
      if(num/10==0)
        return num*7;
-     return (num%10*(8-tem.length())+getCheck(num/10))%10;
+     return ((num%10)*(8-tem.length())+getCheck(num/10))%10;
    }
  
   /** Returns true if numWithCheckDigit is valid, or false    
