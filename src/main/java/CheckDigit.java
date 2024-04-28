@@ -8,7 +8,7 @@ public class CheckDigit
    public static int getCheck(int num) 
    {  
      /* to be implemented in part (a) */
-     String tem=num;
+     String tem=""+num;
      if(num/10==0)
        return num*7;
      return (num%10*(8-tem.length())+getCheck(num/10))%10;
